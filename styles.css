@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mochiy Pop One';
+  font-weight: bold;
+}
+
+body {
+  background-image: url(img/beer.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 150vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  min-height: 70px;
+  background-image: url(img/lupulos.jpg);
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header a{
+  background-color: #cc6633;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Crafty girls';
+  padding: 5px;
+  margin: 20px;
+}
+
+.options {
+  margin-left: 300px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.options a:hover {
+  background-color: #A6D90B;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 5px -5px #BCD90B;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  scroll-snap-align: start;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  color:#440501;
+  width: 40vw;
+  height: 30vw;
+  align-items: flex-end;
+  margin-left: 580px;
+  font-size: 25px;
+  font-style:oblique;
+  gap: 100px;
+}
+
+.logo h1 {
+  display: inline-block;
+  position: relative;
+  color: #B39D9B;
+  font-weight: bold;
+  text-shadow: blur;
+}
+
+.logo h1::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: currentColor;
+  top: 0.6em;
+  transform: scale(0);
+  transition: all 0.2s ease-in;
+  right: -140px;
+}
+
+h1:hover::after {
+  transform: scale(1);
+}
+
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header a {
+    margin-left: 0px;
+  }
+}
