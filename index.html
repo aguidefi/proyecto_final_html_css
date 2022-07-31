@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,122 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <title>Find Beer</title>
 </head>
+
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="logo">
-        <img src="img/pils.png" alt="logo">
-        <h1>FIND BEER</h1>
-      <div class="options">
-        <a href="" class="nav-link">Nosotros</a>
-        <a href="" class="nav-link">Encuentra</a>
-        <a href="" class="nav-link">Contacto</a>
-      </div>
-      </div>
-    </header>
+  <header class="header">
+    <div class="header__logo">
+      <img src="img/pils.png" alt="logo">
+      <h1>FIND BEER</h1>
+    </div>
+    <div class="header__options">
+      <a href="#us" class="nav-link">Nosotros</a>
+      <a href="#find" class="nav-link">Encuentra</a>
+      <a href="#contact" class="nav-link">Contacto</a>
+    </div>
+  </header>
+  <main class="container">
     <section class="one">
-      <h1>¿En qué bares puedo encontrar mis cervezas artesanales favoritas?</h1>
+      <h2>¿En qué lugares puedo encontrar mis cervezas artesanales favoritas?</h2>
       <p>Nosotros te contamos dónde!</p>
     </section>
+    <a name="us"></a>
     <section class="two">
+      <p class="two__us">Descubrir va en nuestros genes, pensar en nuevos procesos nos hace ser mejores y siempre tenemos esa SED de saber que hay más alla de nuestros horizontes.
+        Por eso conoce find beer, un servicio que te permite explorar nuevas experiencias en el gusto de la cerveza.</p>
+      <img class="two__img" src="img/toast.png" alt="cheers">
     </section>
-    <section class="three">Nosotros</section>
-    <section class="four">Encuentra</section>
-    <section class="five">Contacto</section>
-  </div>
+    <a name="find"></a>
+    <section class="three">
+      <div class="three_map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1Th-Adum9Ycy8lbaSpH8Th52Q0K8l8kE&ehbc=2E312F" width="409,6" height="307,2"></iframe>
+      </div>
+      <div class="three__points">
+        <div class="city">
+          <select name="city" id="select-option">
+            <option>Los Andes</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="barros">
+          <p>📍Barros Wellness & Spa <br>
+            -Botellines de Quicalcura</p>
+        </div>
+        <div class="nankos">
+          <p>📍Nankos Burger <br>
+            -Schop y botellines de Kchuña</p>
+        </div>
+        <div class="gyvens">
+          <p>📍Espacio Gyvens <br>
+            -Schop de Quicalcura y Gussta</p>
+        </div>
+        <div class="cordillera">
+          <p>📍5ta Cordillera <br>
+            -Botellines de Kchuña</p>
+        </div>
+        <div class="zacar">
+          <p>📍Botillería Zacar <br>
+            Cuenta con gran variedad de botellines y latas <br>
+            -Tamango, Quicalcura, Hasta Pronto y muchos más!</p>
+        </div>
+        <div class="cerveceria">
+          <p>📍L.A. Cervecería <br>
+            Gran variedad de schops y botellines <br>
+            -Altamira, Tamango, Mowa, y muchos más!</p>
+        </div>
+      </div>
+    </section>
+    <a name="contact"></a>
+    <section class="four">
+      <div class="four__contact">
+        <div>
+          <img src="img/email.png" alt="email">vickyaguilera@larnu.com
+        </div>
+        <div>
+          <img src="img/llamada.png" alt="telefono">+56987654321
+        </div>
+        <div class="contact__link">
+          <img src="img/github.png" alt="github">
+          <a href="https://github.com/aguidefi">aguidefi</a>
+        </div>
+        <div class="contact__link">
+          <img src="img/instagram.png" alt="instagram">
+          <a href="https://www.instagram.com/vickyaguidf/">vickyaguidf</a>
+        </div>
+      </div>
+      <div class="forms"> 
+      <form class="contact-form">
+        <label for="name">
+          <p>Nombre</p>
+        </label>
+        <input class="four__email" type="text" name="Nombre" id="Nombre" required>
+        <label for="email">
+          <p>Email</p>
+        </Label>
+        <input class= "four__email" type="email" name="email" id="email" placeholder="correo@email.com" required>
+      <label for="name">
+        <p>Asunto</p>
+      </label>
+      <input class="four__email" type="text" name="Nombre" id="Nombre" required>
+      <label for="buscas">
+        <p>Comentarios</p>
+      </label>
+      <textarea id="commit" name="commit"></textarea>
+      <button class="button" type="submit"><p>SALUD!🍻</p></button>
+    </form>
+      <form class="suscribe-form">
+          <h1>¡Suscríbete!</h1>
+          <p>Recibe tips, descuentos, novedades y más!</p>
+        <br>
+          <label for="email">
+            <p>Email</p>
+          </Label>
+          <input class= "four__email" type="email" name="email" id="email" placeholder="correo@email.com" required>
+        <br>
+        <button class="button" type="submit"><p>SALUD!🍻</p></button>
+      </form>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
