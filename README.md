@@ -1,7 +1,5 @@
 # proyecto_final_html_css
 
-# Como crear un proyecto
-
 1. ¿qué me gusta o poseo harto conocimiento?
     
     ej: me gusta andar en skate, anime, It, etc.
@@ -31,5 +29,3 @@ Producto/Servicio: Explicar de que trata nuestro servicio/producto
 footer: información extra  ej: quienes lo apoyan, fecha de creación, etc
 
 Pueden mirar otros sitios de productos que conocen para basarse.
-# proyecto_final_html_css
-# proyecto_final_html_css
